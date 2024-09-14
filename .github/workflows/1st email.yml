@@ -5,6 +5,10 @@ jobs:
   Email:
     runs-on: Ubuntu
 
+    steps: 
+        - name: Print
+          run: echo "Hello world"
+
     steps:
         - name: Send an email
           if: ${{always()}}
