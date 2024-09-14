@@ -9,7 +9,6 @@ jobs:
         - name: Print
           run: echo "Hello world"
 
-    steps:
         - name: Send an email
           if: ${{always()}}
           uses: devellany/send-mailer@v1.0.2
