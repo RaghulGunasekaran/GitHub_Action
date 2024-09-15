@@ -13,13 +13,12 @@ jobs:
           if: ${{always()}}
           uses: dawidd6/action-send-mail@v3
           with:
-            host: smtp.google.com
+            server_address: smtp.google.com
         # Optional port (defaults to 465)
-            port: 465
+            server_port: 465
             password: ${{secrets.MAIL_PASSWORD}}
-            sender: devellany
-            from: ${{secrets.MAIL_ADDRESS}}
-            to: devellay@dico.me
+            username: ${{secrets.MAIL_ADDRESS}}
+            to: mohanraghul.g@gmail.com
             subject: mail title.
             body: Summa.
             
