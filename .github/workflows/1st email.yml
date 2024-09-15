@@ -3,7 +3,7 @@ on: push
 
 jobs:
   Email:
-    runs-on: Ubuntu
+    runs-on: Ubuntu-latest
 
     steps: 
         - name: Print
